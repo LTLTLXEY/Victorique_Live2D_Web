@@ -1,11 +1,13 @@
 # 维多利加 Live2D 看板娘 Web版
 
 * 《GOSICK》维包子介绍 [维多利加·德·布洛瓦](https://baike.baidu.com/item/%E7%BB%B4%E5%A4%9A%E5%88%A9%E5%8A%A0%C2%B7%E5%BE%B7%C2%B7%E5%B8%83%E6%B4%9B%E7%93%A6/8389297)
-* 基于 Live2D Cubism SDK 5.x 的轻量级看板娘组件，引入即用，支持多模型切换与台词气泡交互。
+* Live2D 模型文件来自于B站UP主 [名字无了捏](https://space.bilibili.com/3546820135356721)
+* 基于 [Live2D Cubism SDK 5.x](https://www.live2d.com/zh-CHS/sdk/download/web/) 的轻量级看板娘组件，引入即用，支持多模型切换与台词气泡交互。
 
 ## 快速开始
 
-将整个 `live2d/` 目录部署到网站根目录，然后在页面底部引入两个脚本：
+* 为避免项目文件和同名文件冲突, 推荐在站点根目录下新建一个目录存放仓库文件, 例如`live2d`
+* 然后将整个仓库文件放入 `live2d` 目录完成网站部署，最后在希望展示维包子的页面底部引入`live2dcubismcore.js`和`victorique.js`文件, 例如：
 
 ```html
 <script src="/live2d/live2dcubismcore.js"></script>
@@ -24,8 +26,8 @@ live2d/
 ├── fonts/                     # 本地字体资源
 ├── shaders/                   # WebGL 着色器
 ├── models/
-│   ├── 维多利加/              # 模型 1
-│   └── 甜品维包/              # 模型 2
+│   ├── 维多利加/               # 模型 1
+│   └── 甜品维包/               # 模型 2
 ├── demo.html                  # 集成示例页
 └── LICENSE.md                 # 许可证
 ```
@@ -70,6 +72,11 @@ live2d/
 - 浏览器：支持 WebGL 的现代浏览器（Chrome / Firefox / Safari / Edge）
 - SDK：Live2D Cubism SDK 5.x
 - 移动端：默认不显示，可通过 `mobile: true` 开启
+
+## 效果预览
+<div align="center">
+<img src="./Victorique_live2D_WEB.gif" width="300" alt="维多利加LIVE2D预览">
+</div>
 
 ## 许可证
 
