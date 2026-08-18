@@ -7,14 +7,17 @@
 ## 快速开始
 
 * 为避免项目文件和同名文件冲突, 推荐在站点根目录下新建一个目录存放仓库文件, 例如`live2d`
-* 然后将整个仓库文件放入 `live2d` 目录完成网站部署，最后在希望展示维包子的页面底部引入`live2dcubismcore.js`和`victorique.js`文件, 例如：
+* 然后将整个仓库文件放入 `live2d` 目录完成网站部署
+* 最后在希望展示维包子的页面底部引入`live2dcubismcore.js`和`victorique.js`文件, 例如：
 
 ```html
 <script src="/live2d/live2dcubismcore.js"></script>
 <script src="/live2d/victorique.js"></script>
 ```
 
-脚本加载后会自动在页面左下角创建画布并加载模型，无需额外初始化。
+* 脚本加载后会自动在页面左下角创建画布并加载模型，无需额外初始化。
+* 由于模型文件和`WebGL`加载需要时间, 小水管网站可能会在`30s~60s`完成加载
+* 推荐使用`CDN`对网站进行加速, 理论上加速后能在`10s`左右完成加载
 
 ## 目录结构
 
