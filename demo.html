@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live2D 看板娘 - 集成示例</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 720px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 18px;
+            margin-top: 32px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #eee;
+        }
+        p.subtitle {
+            color: #666;
+            margin-top: 0;
+        }
+        pre {
+            background: #f6f8fa;
+            border-radius: 6px;
+            padding: 14px 16px;
+            overflow-x: auto;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+        .config-table {
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 14px;
+        }
+        .config-table th, .config-table td {
+            border: 1px solid #eaecef;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .config-table th {
+            background: #f6f8fa;
+            font-weight: 600;
+        }
+        .config-table code {
+            background: #eaecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live2D 看板娘集成示例</h1>
+    <p class="subtitle">基于 Live2D Cubism SDK 5.x 的轻量级看板娘组件</p>
+
+    <h2>快速开始</h2>
+    <p>将整个 <code>live2d/</code> 目录部署到网站根目录，然后在页面底部引入两个脚本：</p>
+    <pre>&lt;script src="/live2d/live2dcubismcore.js"&gt;&lt;/script&gt;
+&lt;script src="/live2d/victorique.js"&gt;&lt;/script&gt;</pre>
+    <p>脚本加载后会自动在页面左下角创建画布并加载模型，无需额外初始化。</p>
+
+    <h2>目录结构</h2>
+    <pre>live2d/
+├── victorique.js              # 主程序（自动初始化）
+├── live2dcubismcore.js        # Live2D Core 运行时
+├── bubble.json                # 台词气泡配置
+├── fonts/                     # 本地字体资源
+├── shaders/                   # WebGL 着色器
+├── models/
+│   ├── 维多利加/              # 模型 1
+│   └── 甜品维包/              # 模型 2
+├── demo.html                  # 本示例页
+└── LICENSE.md                 # 许可证</pre>
+
+    <h2>配置说明</h2>
+    <p>通过修改 <code>bubble.json</code> 自定义看板娘行为：</p>
+    <table class="config-table">
+        <thead>
+            <tr>
+                <th>参数</th>
+                <th>类型</th>
+                <th>说明</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>enabled</code></td>
+                <td>boolean</td>
+                <td>是否启用台词气泡</td>
+            </tr>
+            <tr>
+                <td><code>durationMs</code></td>
+                <td>number</td>
+                <td>每条台词显示时长（毫秒）</td>
+            </tr>
+            <tr>
+                <td><code>size</code></td>
+                <td>number</td>
+                <td>画布基础宽度（像素），高度按模型比例自适应</td>
+            </tr>
+            <tr>
+                <td><code>position</code></td>
+                <td>string</td>
+                <td>挂载位置：<code>bottom-left</code>（默认）/ <code>bottom-right</code> / <code>top-left</code> / <code>top-right</code></td>
+            </tr>
+            <tr>
+                <td><code>mobile</code></td>
+                <td>boolean</td>
+                <td>移动端是否显示，默认 <code>false</code>（手机端不显示）</td>
+            </tr>
+            <tr>
+                <td><code>messages</code></td>
+                <td>string[]</td>
+                <td>点击触发的台词列表，按顺序轮播</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>交互说明</h2>
+    <ul>
+        <li>点击模型：触发台词气泡，每 3 次点击切换一次台词</li>
+        <li>鼠标移动：模型视线跟随光标</li>
+        <li>右键 / 长按：切换服装 / 表情</li>
+    </ul>
+
+    <!-- 脚本引用：本页在 live2d 目录内，使用相对路径 -->
+    <script src="./live2dcubismcore.js"></script>
+    <script src="./victorique.js"></script>
+</body>
+</html>

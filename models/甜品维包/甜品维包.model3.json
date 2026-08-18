@@ -1,0 +1,24 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "甜品维包.moc3",
+		"Textures": [
+			"甜品维包.8192/texture_00.png",
+			"甜品维包.8192/texture_01.png"
+		],
+		"Physics": "甜品维包.physics3.json",
+		"DisplayInfo": "甜品维包.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": []
+		}
+	]
+}

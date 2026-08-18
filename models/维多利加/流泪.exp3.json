@@ -1,0 +1,10 @@
+{
+    "Type": "Live2D Expression",
+    "Parameters": [
+        {
+            "Id": "ParamHairBack13",
+            "Value": 1.0,
+            "Blend": "Add"
+        }
+    ]
+}

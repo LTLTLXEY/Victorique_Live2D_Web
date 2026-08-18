@@ -1,0 +1,27 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "维多利加.moc3",
+		"Textures": [
+			"维多利加.4096/texture_00.png",
+			"维多利加.4096/texture_01.png",
+			"维多利加.4096/texture_02.png",
+			"维多利加.4096/texture_03.png",
+			"维多利加.4096/texture_04.png"
+		],
+		"Physics": "维多利加.physics3.json",
+		"DisplayInfo": "维多利加.cdi3.json"
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		},
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": ["ParamEyeLOpen", "ParamEyeROpen"]
+		}
+	]
+}
