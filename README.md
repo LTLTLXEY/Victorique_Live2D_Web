@@ -1,4 +1,4 @@
-# 维多利加 Live2D 看板娘 Web版
+# 维多利加 Live2D 看板娘 Web 版
 
 * 《GOSICK》维包子介绍 [维多利加·德·布洛瓦](https://baike.baidu.com/item/%E7%BB%B4%E5%A4%9A%E5%88%A9%E5%8A%A0%C2%B7%E5%BE%B7%C2%B7%E5%B8%83%E6%B4%9B%E7%93%A6/8389297)
 * Live2D 模型文件来自于B站UP主 [名字无了捏](https://space.bilibili.com/3546820135356721) 模型文件已获授权
