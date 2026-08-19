@@ -1,8 +1,9 @@
 # 维多利加 Live2D 看板娘 Web版
 
 * 《GOSICK》维包子介绍 [维多利加·德·布洛瓦](https://baike.baidu.com/item/%E7%BB%B4%E5%A4%9A%E5%88%A9%E5%8A%A0%C2%B7%E5%BE%B7%C2%B7%E5%B8%83%E6%B4%9B%E7%93%A6/8389297)
-* Live2D 模型文件来自于B站UP主 [名字无了捏](https://space.bilibili.com/3546820135356721)
-* 基于 [Live2D Cubism SDK 5.x](https://www.live2d.com/zh-CHS/sdk/download/web/) 的轻量级看板娘组件，引入即用，支持多模型切换与台词气泡交互。
+* Live2D 模型文件来自于B站UP主 [名字无了捏](https://space.bilibili.com/3546820135356721) 模型文件已获授权
+* 基于 [Live2D Cubism SDK 5.x](https://www.live2d.com/zh-CHS/sdk/download/web/) 的轻量级看板娘组件，引入即用，支持多模型切换与台词气泡交互
+* 本项目所使用的人物形象取材自动漫《GOSICK》，**禁止将该人物形象用于任何商业用途**。所有基于本仓库进行二次开发、衍生修改的作品，其许可权限不得超越本项目的许可约束，衍生项目必须继承本项目全部限制条款。
 
 ## 快速开始
 
@@ -83,5 +84,5 @@ live2d/
 
 ## 许可证
 
-- **本项目代码**（`victorique.js` / 配置 / 文档）：[MIT License](MIT-LICENSE.md)
+- **本项目代码**（`victorique.js` / 配置 / 文档）：[MIT + Commons‑Clause 1.0](MIT-LICENSE.md)
 - **Live2D SDK 与模型**：详见 [LICENSE.md](LICENSE.md)（Live2D 官方许可证）
